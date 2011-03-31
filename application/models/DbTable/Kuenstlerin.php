@@ -9,7 +9,7 @@ class Application_Model_DbTable_Kuenstlerin extends Zend_Db_Table_Abstract
         $id = (int)$id;
         $row = $this->fetchRow('id = ' . $id);
         if (!$row) {
-        throw new Exception("Could not find row $id");
+        throw new Exception("Diese Reihe konnte ich nicht finden: $id");
         }
         return $row->toArray();
         }

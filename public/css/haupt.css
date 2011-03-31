@@ -52,6 +52,13 @@
         font-style:italic;
         margin-top:5px;
     }
+    
+    span#namensliste 
+    {
+        font-size: 0.8em;
+        color:#798680;
+        margin-top:5px;
+    }
 
     div#ueberschriftbox1
     {
@@ -88,7 +95,7 @@
         padding:8px;
     } 
     
-    div#rechtsbox 
+        div#rechtsbox 
     {
         overflow: auto;
         position:absolute;
@@ -96,6 +103,17 @@
         left:455px;
         width:500px;
         height:300px;
+        border: 1px dotted; color:#C0C0C0;
+        padding:8px;
+    }
+        div#rechtsNamensListenBox 
+    {
+        overflow: auto;
+        position:absolute;
+        top:140px;
+        left:755px;
+        width:200px;
+        height:280px;
         border: 1px dotted; color:#C0C0C0;
         padding:8px;
     }

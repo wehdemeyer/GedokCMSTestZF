@@ -1,0 +1,37 @@
+<?php echo $this->doctype(); ?>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<?php
+//      layout.phtml von GedokTestZF8
+
+?>
+    <?php echo $this->headTitle() ?>
+    <?php echo $this->headLink() ?>
+</head>
+
+
+<div id="ueberschriftbox1">
+    <span id="ueberschrift">Laden-Galerie-Harburg</span>
+</div>
+<div id="navibox2">
+        <?php
+        //       Navigation
+        //Suchen nach Navi mit Klasse mainmenu
+        $mainmenu = $this->navigation()->findOneByClass('mainmenu');
+        //Zuordnen einer beliebigen Css Klasse: hier mainmenu
+        $options = array('ulClass' => 'mainmenu');
+        echo $this->navigation()->menu()->renderMenu($mainmenu, $options);
+        ?>
+</div>
+<div id="linksbox">
+    linksbox
+</div>
+<div id="rechtsbox">
+    rechtsbox
+</div>
+<div id="untenbox">
+    untenbox
+</div>
+
+<?php echo $this->layout()->content; ?>

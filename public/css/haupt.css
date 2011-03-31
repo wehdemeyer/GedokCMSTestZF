@@ -1,0 +1,200 @@
+/* 
+    Document   : haupt GedokTestZF8
+    Created on : 27.03.2011, 17:23:20
+    Author     : Eva
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+    body 
+    {
+/*      font-family: Corbel, Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Bitstream Vera Sans, Liberation Sans, Verdana;*/
+        font-family: 'Times New Roman',Times, serif ;
+        margin:0px;
+    }
+
+    hr {border: 0px; border-bottom: 1px dotted; color:#C0C0C0;}
+
+    span#ueberschrift 
+    {
+        padding:6px;
+        font-size: 2.8em;
+        font-weight:900;
+        color:#FF9C2A;
+    }
+    span#lauftext 
+    {
+        padding-top:9px;
+        padding-bottom:9px;
+        line-height: 0.9em;
+        font-size: 1em;
+        color:#798680;
+    }
+    span#lauftextueberschrift 
+    {
+        font-size: 1.5em;
+        font-weight:500;
+        color:#555E5A;
+        /*color:#AA1406; */ /*dunkel orange-rot braun */
+    }
+
+    span#lauftextfett 
+    {
+        font-size: 1em;
+        font-weight:900;
+        color:#AA1406;
+    }
+
+    span#bildtitel 
+    {
+        font-size: 9pt;
+        color:#798680;
+        font-style:italic;
+        margin-top:5px;
+    }
+
+    div#ueberschriftbox1
+    {
+        position:absolute;
+        top:0px;
+        left:11px;
+        width:940px;
+        height:25px;
+        border: 0;
+        padding:7px;
+    }
+    div#navibox2
+    {
+        position:absolute;
+        top:60px;
+        left:15px;
+        width:940px;
+        height:26px;
+        border:0;
+        padding-left:8px;
+        padding-right:8px;
+        padding-top:0px;
+        padding-bottom:6px;
+    }
+    div#linksbox 
+    {
+        position:absolute;
+        top:130px;
+        left:15px;
+        width:400px;
+        height:300px;
+        border: 1px dotted;
+        color:#C0C0C0;
+        padding:8px;
+    } 
+    
+    div#rechtsbox 
+    {
+        overflow: auto;
+        position:absolute;
+        top:130px;
+        left:455px;
+        width:500px;
+        height:300px;
+        border: 1px dotted; color:#C0C0C0;
+        padding:8px;
+    }
+    
+    div#untenbox 
+    {
+        position:absolute;
+        top:470px;
+        left:455px;
+        width:500px;
+        height:300px;
+        border: 1px dotted; color:#C0C0C0;
+        padding:8px;
+    } 
+.mainmenu {
+            margin: 0px 0 0 0px;
+            padding: 0;
+            display: block;
+            list-style: none;
+            color: hsl(200, 40%, 90%);
+            font-size: 12px;
+            background-color: hsl(200, 40%, 30%);
+            background: -moz-linear-gradient(top, hsl(200,40%,35%) 0%, hsl(200,40%,34%) 49%, hsl(200,40%,32%) 51%,  hsl(200,40%,30%) 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,hsl(200,40%,35%)), color-stop(49%,hsl(200,40%,34%)), color-stop(51%,hsl(200,40%,32%)), color-stop(100%,hsl(200,40%,30%))); 
+            border:solid 1px hsl(200,40%,20%);
+            border-radius:3px;
+            -moz-border-radius:3px;
+            -moz-box-shadow: hsl(200,40%,40%) 1px 1px inset, hsl(200,40%,40%) -1px -1px inset;
+            -webkit-box-shadow: hsl(200,40%,40%) 1px 1px inset, hsl(200,40%,40%) -1px -1px inset;
+            box-shadow: hsl(200,40%,40%) 1px 1px inset, hsl(200,40%,40%) -1px -1px inset;
+        }
+
+        .mainmenu > li {
+            padding: 5px 10px 5px 10px;
+            margin-left: 5px;
+            display: inline-block;
+            border: solid 1px;
+            border-color: transparent;
+        }
+
+        .mainmenu > li > a {
+            text-transform: uppercase;
+        }
+
+        .mainmenu > li:after {
+        }
+
+        .mainmenu > li:last-child:after {
+            content: "";
+        }
+
+        .mainmenu > li:hover {
+            background: hsl(0, 0%, 100%);
+            border: solid 1px hsl(200, 40%, 40%);
+            border-bottom-color: hsl(0, 0%, 100%);
+            -webkit-border-top-left-radius: 3px;
+            -webkit-border-top-right-radius: 3px;
+            -moz-border-radius-topleft: 3px;
+            -moz-border-radius-topright: 3px;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            color: hsl(200, 40%, 40%);
+        }
+
+        .mainmenu > li > ul {
+            position: absolute;
+            margin: 6px 0 0 -11px;
+            padding: 0;
+            z-index: 999;
+            background: hsl(0, 0%, 100%);
+            border: solid 1px hsl(200, 40%, 40%);
+            border-top: none;
+            -webkit-border-bottom-right-radius: 3px;
+            -webkit-border-bottom-left-radius: 3px;
+            -moz-border-radius-bottomright: 3px;
+            -moz-border-radius-bottomleft: 3px;
+            border-bottom-right-radius: 3px;
+            border-bottom-left-radius: 3px;
+            color: hsl(200, 40%, 40%);
+            list-style: none;
+            visibility: hidden;
+        }
+
+        .mainmenu > li:hover > ul {
+            visibility: visible;
+        }
+
+        .mainmenu > li > ul > li {
+            padding: 5px 10px 5px 10px;
+            border-bottom: solid 1px hsl(200, 40%, 60%);
+            font-size: 11px;
+            cursor: pointer;
+        }
+
+        .mainmenu > li > ul > li:hover {
+            background-color: hsl(200, 40%, 95%);
+        }
+       
+        .mainmenu > li > ul > li:last-child {
+            border: none;
+        }
+

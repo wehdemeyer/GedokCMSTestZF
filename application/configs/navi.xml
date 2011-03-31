@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding= "UTF-8" ?>
+    <!-- GedokTestZF8 -->
+<configdata>
+    <nav>
+    <!-- ERSTES MENÜ MAINMENÜ -->
+    <mainmenu>
+    <label>a</label>
+    <controller>b</controller>
+    <action>c</action>
+    <title>d</title>
+    <!-- KANN ÜBER DIESE KLASSE GESUCHT WERDEN -->
+    <class>mainmenu</class>
+       <pages>
+        <seite1>
+            <label>local index</label>
+            <title>Titel: local index</title>
+            <type>uri</type>
+            <uri>index</uri>
+        </seite1>
+        <seite2>
+            <label>wehdemeyer blog</label>
+            <type>uri</type>
+            <uri>http://www.wehdemeyer.de/e_blog</uri>
+        </seite2>    
+        <seite3>
+            <label>KunstKate</label>
+            <type>uri</type>
+            <uri>http://www.kunst-raum-volksdorf.de</uri>
+        </seite3>         
+        </pages>
+    </mainmenu>
+    </nav>
+</configdata>

@@ -1,0 +1,34 @@
+    <?php 
+    $this->title = "Titel von: Menü css und alles zusammen Versuch!";
+    $this->headTitle($this->title);
+    ?>
+<!--GedokTestZF8-->
+<div id="rechtsbox">
+    rechtsbox:<br><br>
+    to do:<br>
+<br> wohin die kuenstlerinnen-Liste?,<br> warum echo? <br> menues,<br> navigation, <br>css<br><br><br>
+    erledigt: 
+    <br>v layout
+    <br>v datenbank
+</div>
+<div id="linksbox">
+    <br><br>
+<table>
+<tr>
+<th>Name</th>
+<th>Vorname</th>
+<th>Sparte</th>
+<th>link</th>
+</tr>
+<?php foreach($this->kuenstlerin as $kuenstlerin) : ?>
+<tr>
+<td><?php echo $this->escape($kuenstlerin->name);?></td>
+<td><?php echo $this->escape($kuenstlerin->vorname);?></td>
+<td><?php echo $this->escape($kuenstlerin->sparte) ;?> </td>
+<td> echo <a href="
+            <?php echo $this->escape($kuenstlerin->name) . ($kuenstlerin->vorname)?>
+     ">     <?php echo $this->escape($kuenstlerin->name) . ($kuenstlerin->vorname)?> </a></td>
+</tr>
+<?php endforeach; ?>
+</table>
+</div>
